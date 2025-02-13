@@ -24,7 +24,7 @@ public class ProcesarServlet extends HttpServlet {
             PreparedStatement stmt = null;
             try {
                 conn = DBConnection.getConnection();
-                String sql = "INSERT INTO usuarios (nombre, email, password) VALUES (?, ?, ?)";
+                String sql = "INSERT INTO Usuarios (nombre, email, password) VALUES (?, ?, ?)";
                 stmt = conn.prepareStatement(sql);
                 stmt.setString(1, nombre);
                 stmt.setString(2, email);
